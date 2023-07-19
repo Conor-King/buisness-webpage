@@ -21,12 +21,17 @@ body {
     width: 100%;
     position: fixed;
     display: flex;
+    align-content: center;
     justify-content: space-between;
     background-color: #000000;
     padding: 0px;
 }
 
 .right-element img{
+    margin: 15px;
+}
+
+.left-element h1{
     margin: 15px;
 }
 
@@ -52,7 +57,7 @@ footer {
 /* Container to hold the image and text sections */
 .container {
     position: relative;
-    top: -200px;
+    top: -150px;
     max-width: 100%;
     z-index: -1;
 }
@@ -86,9 +91,30 @@ img {
     
 }
 
+.text-image {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: -300px;
+}
+
+.text-image p {
+    max-width: 700px;
+    margin: 40px;
+}
+
+.text-image img{
+    max-width: 400px;
+    max-height: 400px;
+    margin: 40px
+}
 @media screen and (max-width: 768px) {
     .top-row {
         flex-wrap: wrap;
+    }
+
+    .text-image img{
+        display: none;
     }
 
     h1 {
